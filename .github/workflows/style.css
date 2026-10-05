@@ -26,7 +26,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Horizontal Main Layout */
 .tracker-main {
   display: flex;
   gap: 16px;
@@ -34,7 +33,6 @@ body {
   overflow-x: auto;
 }
 
-/* Equal Top Headers (Fixed 64px Height) */
 .column-header {
   height: 64px;
   border-bottom: 1px solid #30363d;
@@ -75,7 +73,6 @@ body {
   line-height: 16px;
 }
 
-/* Left Habit Column */
 .habits-column {
   flex: 0 0 260px;
   background-color: #0d1117;
@@ -87,7 +84,7 @@ body {
 .habits-list {
   display: flex;
   flex-direction: column;
-  gap: 8px; /* Strict matching vertical gap */
+  gap: 8px; 
 }
 
 .habit-input {
@@ -97,7 +94,7 @@ body {
   padding: 0 12px;
   border-radius: 6px;
   font-size: 13px;
-  height: 36px; /* Strict matching row height */
+  height: 36px; 
   width: 100%;
 }
 
@@ -106,7 +103,7 @@ body {
   border-color: #58a6ff;
 }
 
-/* Right Weeks Wrapper */
+
 .weeks-wrapper {
   display: flex;
   gap: 12px;
@@ -125,16 +122,16 @@ body {
 .checkbox-matrix {
   display: flex;
   flex-direction: column;
-  gap: 8px; /* Strict matching vertical gap */
+  gap: 8px; 
 }
 
 .habit-row {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  height: 36px; /* Strict matching row height */
+  height: 36px; 
   align-items: center;
   justify-items: center;
-  border-bottom: 1px solid rgba(48, 54, 61, 0.4); /* Printable grid line look */
+  border-bottom: 1px solid rgba(48, 54, 61, 0.4); 
 }
 
 .habit-row input[type="checkbox"] {
