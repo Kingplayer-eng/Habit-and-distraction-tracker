@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const weekCards = document.querySelectorAll(".week-card");
   const habitInputs = document.querySelectorAll(".habit-input");
 
-  // 1. Weekly Chart Configuration
   const ctxWeekly = document.getElementById("weeklyChart").getContext("2d");
   const weeklyChart = new Chart(ctxWeekly, {
     type: "bar",
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  // 2. Monthly Chart Configuration
+
   const ctxMonthly = document.getElementById("monthlyChart").getContext("2d");
   const monthlyChart = new Chart(ctxMonthly, {
     type: "bar",
@@ -75,9 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  // 3. Update Function
   function updateAnalytics() {
-    // Calculate Weekly Completion %
+
     const weeklyData = [];
     weekCards.forEach((card) => {
       const checkboxes = card.querySelectorAll('input[type="checkbox"]');
@@ -90,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     weeklyChart.data.datasets[0].data = weeklyData;
     weeklyChart.update();
 
-    // Calculate Habit Totals Across All 4 Weeks
+
     const habitTotals = new Array(10).fill(0);
     const habitLabels = [];
 
