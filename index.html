@@ -1,1 +1,151 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit & Distraction Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="tracker-app">
+    <header class="app-header">
+      <h1>Habit & Distraction Tracker</h1>
+    </header>
+
+    <div class="tracker-main">
+      
+      
+      <div class="habits-column">
+        <div class="column-header">
+          <h2>Habit / Task</h2>
+          <div class="header-subrow">Daily Goal</div>
+        </div>
+        <div class="habits-list">
+                  <input type="text" class="habit-input" placeholder="1. e.g. Read 20 pages">
+                      <input type="text" class="habit-input" placeholder="2. Morning Exercise">
+                    <input type="text" class="habit-input" placeholder="3. Drink 2L Water">
+                    <input type="text" class="habit-input" placeholder="4. No Sugar">
+                    <input type="text" class="habit-input" placeholder="5. Meditation">
+                     <input type="text" class="habit-input" placeholder="6.">
+                     <input type="text" class="habit-input" placeholder="7.">
+                             <input type="text" class="habit-input" placeholder="8.">
+                             <input type="text" class="habit-input" placeholder="10.">
+        </div>
+      </div>
+
+      <div class="weeks-wrapper">
+        
+           
+        <div class="week-card">
+          <div class="column-header">
+            <h3>Week 1</h3>
+            <div class="days-header">
+              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+            </div>
+          </div>
+          <div class="checkbox-matrix">
+                                      <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                              <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                              <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                            <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                            <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                            <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                            <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                             <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                           <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                             <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+          </div>
+        </div>
+     
+        <div class="week-card">
+          <div class="column-header">
+            <h3>Week 2</h3>
+            <div class="days-header">
+              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+            </div>
+          </div>
+          <div class="checkbox-matrix">
+                       <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                          <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                             <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                         <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                          <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                           <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                           <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                             <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                          <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+          </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="week-card">
+          <div class="column-header">
+            <h3>Week 3</h3>
+            <div class="days-header">
+              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+            </div>
+          </div>
+          <div class="checkbox-matrix">
+            <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+             <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                   <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                     <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                        <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                             <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                         <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                  <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                       <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                           <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+          </div>
+        </div>
+
+    <div class="week-card">
+       <div class="column-header">
+            <h3>Week 4</h3>
+           <div class="days-header">
+             <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+          </div>
+          </div>
+          <div class="checkbox-matrix">
+                     <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                 <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                     <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                  <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                     <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                 <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                               <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                           <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                              <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+                                     <div class="habit-row"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="analytic-section">
+    <h2>Progress Analytics</h2>
+    <div class="charts-container">
+      <div class="chart-card">
+        <h3>Weekly Completion Graph</h3>
+              <canvas id="weeklyChart"></canvas>
+             </div>
+           <div class="chart-card">
+                <h3>4 weeks Habit Report</h3>
+             <canvas id="monthlyChart"></canvas>
+         </div>
+        </div>
+    </div>
+
+ 
+  <script src="script.js"></script>
+
+</body>
+</html>
